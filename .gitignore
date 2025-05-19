@@ -1,1 +1,7 @@
 /target/
+.DS_Store
+/.idea/
+/.vscode/
+/.gradle/
+/drivers/
+*.DS_Store
