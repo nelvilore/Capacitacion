@@ -3,9 +3,16 @@
 Característica: Realizar una búsqueda en Google
 
 
-  @BusquedaCiudad @HAPPY
-  Esquema del escenario: Busco en Google una ciudad de Perú doy click al primer resultado y salgo de Google
-    Dado que abro Google
+  @BusquedaCiudad @HAPPY1
+  Escenario: [HAPPY PATH] Realiza busqueda exitosa de resultado en Google
+    Dado que el actor abre la página de Google
+    Cuando escribo "Trujillo"
+    Y accedo al primer resultado
+    Entonces valido que salí de Google
+
+  @BusquedaCiudad @HAPPY2
+  Esquema del escenario: [HAPPY PATH] Realiza busqueda exitosa de resultado en Google
+    Dado que el actor abre la página de Google
     Cuando escribo "<Ciudad>"
     Y accedo al primer resultado
     Entonces valido que salí de Google
@@ -13,3 +20,13 @@ Característica: Realizar una búsqueda en Google
       | Ciudad   |
       | Trujillo |
       | Lima     |
+
+  @BusquedaCiudad @UNHAPPY
+  Esquema del escenario: [UNHAPPY PATH] Realiza busqueda no exitosa de resultado en Google - Ingresa descripcion invalida
+    Dado que el actor abre la página de Google
+    Cuando escribo "<Palabra>"
+    Y accedo al primer resultado
+    Entonces valido que salí de Google
+    Ejemplos:
+      | Palabra   |
+      | asjdajajsjasa |

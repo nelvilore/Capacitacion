@@ -1,4 +1,4 @@
-package com.bdd.web.page.GooglePage;
+package com.bdd.userinterfaces.GooglePage;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

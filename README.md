@@ -25,7 +25,7 @@
 - Alta reutilización de componentes
 - Reportes más significativos
 
-## 🛠 Diferencias
+## 🪄 Diferencias
 
 | Entidad/Concepto       | Page Object Model (POM)                          | Screenplay Pattern                                |
 |------------------------|--------------------------------------------------|--------------------------------------------------|
