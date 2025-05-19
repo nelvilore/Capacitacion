@@ -11,7 +11,8 @@ import org.junit.runner.RunWith;
         glue = {"stepdefinitions", "hooks"},
         plugin = {"pretty", "json:target/cucumber-reports/Cucumber.json"},
         tags = "@BusquedaCiudad",
-        snippets = CucumberOptions.SnippetType.CAMELCASE
+        snippets = CucumberOptions.SnippetType.CAMELCASE,
+        stepNotifications = true
 )
 public class RunnerTest {
 }
